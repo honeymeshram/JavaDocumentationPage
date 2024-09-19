@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Java Documentation</header>
+        <a class="nav-link" href="#Java_Introduction">Java Introduction</a>
+        <a href="#Java_Features" class="nav-link">Java Features</a>
+        <a href="#Java_Variables" class="nav-link">Java Variables</a>
+        <a href="#Types_Of_Variables" class="nav-link">Types Of Variables</a>
+        <a href="#Java_Data_Types" class="nav-link">Java Data Types</a>
+          <a href="#Java_Control_Statement" class="nav-link">Java Control Statement</a>
+            <a href="#Java_Descision_Making_Statement" class="nav-link">Java Descision Making Statement</a>
+           
+      </nav>
+      <section id="sec2">
+      <section class="main-section" id="Java_Introduction">
+        <header>Java Introduction</header>
+        <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.</p>
+        <p>Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.</p>
+        <p>Let's have a quick look at Java programming example.  </p>
+        <p>Java Syntax :-</p>
+        <code>class Simple{  <br>
+    public static void main(String args[]){   <br>
+     System.out.println("Hello Java");   <br>
+    }   <br>
+}</code>
+<p>Output :- Hello World</p>
+      
+      </section>
+      <section class="main-section" id="Java_Features">
+        <header>Java Features</header>
+        <p>The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.</p>
+        <p>A list of the most important features of the Java language is given below.</p>
+        <ol>
+          <li>Simple</li>
+          <p>Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because:
+<ul>
+  <li>Java syntax is based on C++ (so easier for programmers to learn it after C++).</li>
+  <li>Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.</li>
+  </li>There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.</li>
+</ul>
+</p>
+          <li>Object-Oriented</li>
+          <p>Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior.
+          <p>Object-oriented programming (OOPs) is a methodology that simplifies software development and maintenance by providing some rules.</p>
+          <p>Basic concepts of OOPs are:</p>
+          <ol>
+            <li>Object</li>
+            <li>Class</li>
+            <li>Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Abstraction
+              <li>Encapsulation</li>
+            </li>
+          </ol>
+          </p>
+          <li>Platform Independent</li>
+          <p>Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+            <p>The Java platform differs from most other platforms in the sense that it is a software-based platform that runs on top of other hardware-based platforms. It has two components:
+              <ol>
+                <li>
+                  Runtime Environment
+                </li>
+                <li>
+                  API (Aplication Programming Interface)
+                </li>
+
+              </ol>
+              <p>Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).
+
+</p>
+            </p>
+          </p>
+          <li>Secured</li>
+          <p>Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+            <ul>
+              <li>No explicit pointer</li>
+              <li>Java Programs run inside a virtual machine sandbox</li>
+              <li>Classloader: Classloader in Java is a part of the Java Runtime Environment (JRE) which is used to load Java classes into the Java Virtual Machine dynamically. It adds security by separating the package for the classes of the local file system from those that are imported from network sources.</li>
+              <li>Bytecode Verifier: It checks the code fragments for illegal code that can violate access rights to objects.</li>
+              <li>Security Manager: It determines what resources a class can access such as reading and writing to the local disk.</li>
+              </ul>
+          </p>
+          <li>Robust</li>
+          <p>
+            The English mining of Robust is strong. Java is robust because:
+            <ul>
+              <li>It uses strong memory management.</li>
+              <li>There is a lack of pointers that avoids security problems.</li>
+              <li>Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.</li>
+              <li>There are exception handling and the type checking mechanism in Java. All these points make Java robust.</li>
+            </ul>
+          </p>
+          <li>Distributed</li>
+          <p>Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.</p>
+          <li>Multihtreaded</li>
+          <p>A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.</p>
+          <li>Dynamic</li>
+          <p>Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.
+
+Java supports dynamic compilation and automatic memory management (garbage collection).</p>
+        </ol>
+       
+      </section>
+     
+      <section class="main-section" id="Java_Variables">
+        <header>Java Variables</header>
+        <p>A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.</p>
+        <p>Variable is a name of memory location. There are three types of variables in java: local, instance and static.</p>
+        <p><strong>Variable :-</strong> A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.
+        <code>example:-
+
+          int data=50;//Here data is variable 
+
+        </code>
+</p>
+       
+      </section>
+      <section   class="main-section" id="Types_Of_Variables">
+        <header>Types Of Variables</header>
+        <p>There are three types of variables in Java:</p>
+        <ol>
+          <li>local variable
+            <p>A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.</p>
+            <p>A local variable cannot be defined with "static" keyword.</p>
+          </li>
+
+          <li>instance variable
+            <p>A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.</p>
+          <p>It is called an instance variable because its value is instance-specific and is not shared among instances.</p>
+          </li>
+          <li>static variable
+            <p>A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.</p>
+          </li>
+
+        </ol>
+        <p>Example to understand the types of variables in java</p>
+        <code>public class A  
+{   <br>
+    static int m=100;//static variable   <br>
+    void method()  
+    {     <br>
+        int n=90;//local variable  <br>    
+    }   <br>
+    public static void main(String args[])  
+    {   <br>
+        int data=50;//instance variable     <br>
+    }   <br>
+}//end of class   <br> </code>
+<p>Java Variable Example: Add Two Numbers</p>
+        <code>
+          public class Simple{    <br> 
+public static void main(String[] args){     <br>
+int a=10;    <br> 
+int b=10;    <br> 
+int c=a+b;   <br>  
+System.out.println(c);     <br>
+}   <br>
+}     </code>
+<p>Output :-</p>
+<code>20</code>
+      
+      </section>
+       <section id="Java_Data_Types" class="main-section">
+        <header>Java Data Types</header>
+        <p>Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:</p>
+        <ol>
+          <li><strong>Primitive data types:</strong> The primitive data types include boolean, char, byte, short, int, long, float and double.</li>
+          <li><strong>Non-primitive data types:</strong> The non-primitive data types include Classes, Interfaces, and Arrays.</li>
+        </ol>
+        <p>There are 8 types of primitive data types:
+ <ul>
+   <li>boolean data type</li>
+   
+     <li>byte data type</li>
+      <li>char data type</li>
+      <li>short data type</li>
+       <li>int data type</li>
+        <li>long data type</li>
+         <li>float data type</li>
+          <li>double data type</li>
+ </ul>
+</p>
+
+        <code>
+          Examples:-
+          Boolean one = false ; //boolean data type <br>
+          byte a = 10, byte b = -20 ; //byte data type
+          <br>
+          short s = 10000, short r = -5000;  //short data type
+          <br>
+          int a = 100000, int b = -200000  //int data type
+          <br>
+          long a = 100000L, long b = -200000L;
+        //long data type
+        <br>
+        float f1 = 234.5f;  //float data type
+        <br>
+        double d1 = 12.3  //double data type
+        <br>
+        char letterA = 'A'  //char data type
+
+
+        </code>
+       
+      </section>
+
+
+      
+      <section id="Java_Control_Statement" class="main-section">
+        <header>Java Control Statement</header>
+        <p>Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear. However, Java provides statements that can be used to control the flow of Java code. Such statements are called control flow statements. It is one of the fundamental features of Java, which provides a smooth flow of program.</p>
+        <p>Java provides three types of control flow statements.</p>
+        <ol>
+          <li>Decision Making statements
+            <ul>
+              <li>if statements</li>
+               <li>switch statement</li>
+            </ul>
+           </li>
+             <li>Loop statements
+            <ul>
+              <li>do while loop</li>
+               <li>while loop</li>
+               <li>for loop</li>
+               <li>for each loop</li>
+            </ul> 
+             </li>
+              <li>Jump statements
+            <ul>
+              <li>break statement</li>
+               <li>Continue statement</li>
+               
+            </ul>
+            
+             </li>
+              </ol>
+           
+           
+       
+      </section>
+       <section id="Java_Descision_Making_Statement" class="main-section">
+        <header>Java Descision Making Statement</header>
+        <p>As the name suggests, decision-making statements decide which statement to execute and when. Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided. There are two types of decision-making statements in Java, i.e., If statement and switch statement.</p>
+       
+        <ol>
+          <li>If Statement:
+          <p>In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false. In Java, there are four types of if-statements given below.</p>
+           <ul>
+              <li>Simple if statement
+                <p>It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.</p>
+                <p>Syntax of if statement is given below.</p>
+<code>if(condition) {  <br>   
+statement 1; //executes when condition is true    <br>
+}   </code>
+
+</li>
+               <li>if-else statement
+                   <p>The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. The else block is executed if the condition of the if-block is evaluated as false.</p>
+                <p>Syntax of if-else statement is given below.</p>
+<code>if(condition) {    <br> 
+statement 1; //executes when condition is true    <br> 
+}   <br> 
+else{   <br> 
+statement 2; //executes when condition is false    <br> 
+}  </code>
+               </li>
+               <li>if-else-if ladder</li>
+                <p>The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true. We can also define an else statement at the end of the chain.</p>
+                <p>Syntax of if-else-if ladder statement is given below.</p>
+<code>if(condition 1) {   <br> 
+statement 1; //executes when condition 1 is true   <br> 
+}  <br> 
+else if(condition 2) {  <br> 
+statement 2; //executes when condition 2 is true   <br> 
+}  <br> 
+else {  <br> 
+statement 2; //executes when all the conditions are false   <br> 
+}  </code> </li>
+               <li>Nested if-statement
+                   <p>In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement.</p>
+                <p>Syntax of Nested if  statement is given below.</p>
+<code>if(condition 1) {   <br>  
+statement 1; //executes when condition 1 is true   <br>
+if(condition 2) {  <br>
+statement 2; //executes when condition 2 is true   <br>
+}  <br>
+else{  <br>
+statement 2; //executes when condition 2 is false   <br>
+}  <br>
+}</code> </li>
+            </ul> 
+           </li>
+             <li>Switch statements
+               <p>In Java, Switch statements are similar to if-else-if statements. The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched. The switch statement is easier to use instead of if-else-if statements. It also enhances the readability of the program.</p>
+               <p>Points to be noted about switch statement:</p>
+            <ul>
+              <li>The case variables can be int, short, byte, char, or enumeration. String type is also supported since version 7 of Java</li>
+               <li>Cases cannot be duplicate</li>
+               <li>Default statement is executed when any of the case doesn't match the value of expression. It is optional.</li>
+               <li>Break statement terminates the switch block when the condition is satisfied.
+It is optional, if not used, next case is executed.</li>
+<li>While using switch statements, we must notice that the case expression will be of the same type as the variable. However, it will also be a constant value.</li>
+            </ul> 
+            <p>The syntax to use the switch statement is given below.</p>
+             </li>
+             <code>switch (expression){  <br>
+    case value1:  
+     statement1;  <br>
+     break;  <br>
+    .  <br>
+    .  <br>
+    .  <br>
+    case valueN:  
+     statementN;  <br>
+     break;  <br>
+    default:  <br>
+     default statement; <br> 
+}  </code>
+              </ol>
+           
+           
+       
+      </section>
+      </section>
+    </main>
+  </body>
+</html>
